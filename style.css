@@ -1,10 +1,75 @@
-#seven {
-    width: 50px;
-    background-color: aqua;
-    height: 50px;
-    border-radius: 5px;
-    display: flex;
+.content__but {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
     justify-content: center;
     align-items: center;
     border: 1px solid black;
+    user-select: none;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+
+
+.content__main {
+    margin: 50px auto;
+    width: 390px;
+    height: 650px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 10%);
+    color: #fff;
+}
+
+.content__main__buttons {
+    height: 370px;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+ gap: 10px;
+ padding: 20px;
+ 
+}
+
+
+.content__but:hover {
+    filter: brightness(120%);
+}
+
+.content__but:active {
+    filter: brightness(90%);
+}
+
+
+
+.orange {
+    background-color: #ff9501;
+   
+
+}
+
+.gray {
+    background-color: #a6a6a6;
+   
+
+}
+
+.white {
+    background-color: #333;
+}
+
+
+#result {
+    padding: 20px;
+    height: 200px;
+    width: 350px;
+    display: grid;
+
+    justify-items: end;
+    align-items: end;
+    font-size: 3rem;
 }
