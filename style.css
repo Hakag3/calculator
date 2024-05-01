@@ -1,0 +1,10 @@
+#seven {
+    width: 50px;
+    background-color: aqua;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
