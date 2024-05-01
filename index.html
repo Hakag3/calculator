@@ -10,22 +10,25 @@
 
 <body>
 
-    <!-- <div></div> -->
+    <div class="realese">
+        Релиз в 25 году . Следить тут...
+        <a href="https://github.com/Hakag3/calculator">клик</a> 
+    </div>
     <script src="main.js"></script>
 
     <div class="content__main" id="calculator">
-        <div class="" id="result">
+        <div class="" id="display" >
 
 
         </div>
         <div class="content__main__buttons">
             <div class="content__but gray" id="ac" onclick=" setNumber('ac')">
-                ac
+                upd
             </div>
             <div class="content__but gray" id="plus" onclick=" setNumber('+/-')">
-                +/-
+                upd
             </div>
-            <div class="content__but gray" id="percent" onclick=" setNumber('%')">
+            <div class="content__but gray" id="percent" onclick=" setNumber('/100')">
                 %
             </div>
             <div class="content__but orange" id="plus" onclick=" setNumber('+')">
@@ -53,8 +56,8 @@
             <div class="content__but white" id="four" onclick="setNumber(4)">
                 4
             </div>
-            <div class="content__but orange" id="multi" onclick=" setNumber('×')">
-                ×
+            <div class="content__but orange" id="multi" onclick=" setNumber('*')">
+                *
             </div>
             <div class="content__but white" id="three" onclick="setNumber(3)">
                 3
@@ -75,12 +78,12 @@
                 .
             </div>
 
-            <div class="content__but white" id="clear" onclick=" setNumber('C')">
+            <div class="content__but white" id="clearDisplay"  onclick=" clearDisplay()">
                 C
             </div>
            
             
-            <div class="content__but orange" id="equal" onclick=" setNumber('=')">
+            <div class="content__but orange" id="equal" onclick=" calculate()">
                 =
             </div>
             
