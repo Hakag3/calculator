@@ -11,7 +11,7 @@ function clearDisplay() {
 
 function calculate() {
     let resultString = document.getElementById('display');
-    // resultString.innerText = eval(resultString.innerText);
+   
     if (resultString.innerText === "" || resultString.innerText === null) {
         resultString.innerText = "0";
     } else {
@@ -29,24 +29,12 @@ function calculate() {
 function getProcent() {
     let resultString = document.getElementById('display');
     if (!isNaN(parseFloat(resultString.innerText))) {
-        let value = parseFloat(resultString.innerText) / 100;
+        let value = eval(eval(resultString.innerText) / 100);
         resultString.innerText = value.toFixed(4);
     }
 }
 
-// function setDinamicNumber() {
-//     let resultString = document.getElementById('display');
-//     let number = parseInt(resultString.innerText)
-//     if (number > 0) {
-//         resultString.innerText = eval(number - (number * 2))
-//     }
-//     else if (number < 0) {
-//         resultString.innerText = eval(number + (number * -2))
-//     }
-//     else {
-//         return
-//     }
-// }
+
 
 function setDinamicNumber() {
     let resultString = document.getElementById('display');
@@ -54,3 +42,4 @@ function setDinamicNumber() {
     number = -number;
     resultString.innerText = number.toString();
 }
+
