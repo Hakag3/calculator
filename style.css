@@ -22,7 +22,7 @@
     border-radius: 20px;
     justify-content: center;
     align-items: center;
-    background-color: hsl(0, 0%, 10%);
+    background-color: hsl(0, 0%, 30%);
     color: #fff;
     overflow: hidden;
 }
@@ -42,7 +42,7 @@
 }
 
 .content__but:active {
-    filter: brightness(90%);
+    filter: brightness(100%);
 }
 
 
@@ -102,6 +102,7 @@
 
 .button_git:hover {
     filter: brightness(90%);
+
 }
 
 

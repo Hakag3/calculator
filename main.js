@@ -16,7 +16,7 @@ function calculate() {
         resultString.innerText = "0";
     } else {
 
-        try {
+        try { 
             resultString.innerText = eval(resultString.innerText);
         } catch (error) {
 
@@ -34,17 +34,23 @@ function getProcent() {
     }
 }
 
+// function setDinamicNumber() {
+//     let resultString = document.getElementById('display');
+//     let number = parseInt(resultString.innerText)
+//     if (number > 0) {
+//         resultString.innerText = eval(number - (number * 2))
+//     }
+//     else if (number < 0) {
+//         resultString.innerText = eval(number + (number * -2))
+//     }
+//     else {
+//         return
+//     }
+// }
+
 function setDinamicNumber() {
     let resultString = document.getElementById('display');
-    let number = parseInt(resultString.textContent)
-    if (number > 0) {
-        resultString.innerText = eval(number - (number * 2))
-    }
-    else if (number < 0) {
-        resultString.innerText = eval(number + (number * -2))
-    }
-    else {
-        return
-    }
+    let number = parseFloat(resultString.innerText);
+    number = -number;
+    resultString.innerText = number.toString();
 }
-
